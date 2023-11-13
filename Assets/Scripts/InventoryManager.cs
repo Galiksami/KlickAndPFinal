@@ -38,13 +38,13 @@ public class InventoryManager : MonoBehaviour
         {
             GameObject obj = Instantiate(InventoryItem, ItemContent);
 
-            // Check if obj is null before attempting to access its components
+            
             if (obj != null)
             {
                 var itemIcon = obj.transform.Find("ItemIcon")?.GetComponent<Image>();
                 var itemName = obj.transform.Find("ItemName")?.GetComponent<TextMeshProUGUI>();
 
-                // Check if itemIcon and itemName are not null before accessing their properties
+                
                 if (itemIcon != null && itemName != null)
                 {
                     itemName.text = item.itemName;

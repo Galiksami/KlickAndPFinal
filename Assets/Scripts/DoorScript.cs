@@ -28,11 +28,11 @@ public class DoorScript : MonoBehaviour
 				{
 					if (!doorAutoClose.IsDoorOpen())
 					{
-						doorAutoClose.OpenDoor(); // Open the door and start the auto-close coroutine
+						doorAutoClose.OpenDoor();
 					}
 					else
 					{
-						doorAutoClose.CloseDoor(); // Manually close the door and stop the auto-close coroutine
+						doorAutoClose.CloseDoor();
 					}
 				}
 			}
