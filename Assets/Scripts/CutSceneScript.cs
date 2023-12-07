@@ -41,7 +41,7 @@ public class CutsceneTrigger : MonoBehaviour
         if (IsPlayerNearCollider() && !hasCutscenePlayed)
         {
             // Check if the 'E' key is pressed using Unity's Input System.
-            if (Keyboard.current.eKey.wasPressedThisFrame)
+            if (Keyboard.current.tKey.wasPressedThisFrame)
             {
                 // Play the cutscene.
                 PlayCutscene();
